@@ -1,3 +1,7 @@
+#URI - Online Judge
+#
+#1018 - Cédulas
+
 value = int(input())
 
 print(value)
