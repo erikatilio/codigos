@@ -8,6 +8,6 @@ print("sua media nesse periodo foi:",media)
 if media >= 8:
     print("Parabéns victor,você foi aprovado,agora é so correr para o abraço,e comemorar com os amigos")
 
-if media <8:
+else:
     print("infelizmente não foi dessa vez victor,estude mais e recupere sua nota.")
 
