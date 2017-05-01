@@ -1,0 +1,6 @@
+print("Listas")
+
+list = [] #criar uma lista vazia
+number = int(input('\nDigite um número: ')) #criar uma variável pedindo os numeros
+list.append(number) #adicionar essa variável a lista criada
+print(list) #imprime os valores contidos na lista
