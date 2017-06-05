@@ -1,0 +1,31 @@
+#Aluno : Victor Hugo
+#Universidade do Estado do Amazonas
+--------------------------------------------------------------------------------------------------------------
+#imprimir do 1 até o 3 termo
+#imprimir do 3 até o 5 termo
+#adicionar um numero na lista
+#tirar uma copia da lista
+#imprimir  ultimo numero da lista
+#imprimir o primeiro numero da lista
+#imprimir a soma e a media de determinada lista
+#imprimir a quantidade de itens da lista
+#No exemplo será usada notas
+print("EXEMPLOS USANDO LISTAS: ")
+
+soma = 0
+notas = [5,7,10,8,9,7]
+c = 0
+while c < 6:
+    soma = soma + notas[c]
+    media = soma / 5
+    c = c + 1
+print("A soma dos termos na lista é: ", soma)
+print("A media dos termos na lista é: ", media)
+notas.append(6) #inserindo o numero 6 na lista
+print(notas) #imprimindo notas
+print(notas[1:4]) #imprimindo do numero 1 até o 4
+print(notas[3:6]) #imprimindo do numero 3 até o 6
+print(notas[:]) # tira uma copia da lista com foi inserido o numero 6 na lista aparecerá o numero 6
+print(notas[-1]) #imprimindo o ultim numero da lista
+print(notas[0]) #imprimindo o primeiro termo da lista
+print(len(notas)) # imprimind a quantidade de termos da lista
