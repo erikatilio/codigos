@@ -1,8 +1,0 @@
-#estrutura de repetição
-
-a = 999 #acumulador
-c = 1 #contador 
-
-while c < a: #Enquanto o contador for menor que o acumulador,execute
-    c = c + 2 #c recebera o valor de c acrescentado com mais 2
-    print(c)  #imprimir o c
