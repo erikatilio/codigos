@@ -1,0 +1,48 @@
+velha = ['1','2','3','4','5','6','7','8','9'] # Criando um vetor de 9 numeros(9 posições na tabela)
+jogadas = 9 # Adicionando variavel para contar o numero de jogadas
+vitorias = 0 #adicionando variável para vitoria
+
+print() # imprimir um linhas de espaço
+print(velha[0],velha[1],velha[2])
+print(velha[3],velha[4],velha[5])
+print(velha[6],velha[7],velha[8])
+
+while jogadas > 0 and vitorias == 0: # Enquanto jogadas for maior que 0 e vitorias for igual a 0 --> "execute"
+    jogada = int(input("Digite a sua posição a ser jogada: ")) #permitindo ao usuário adicionar a sua posição no jogo
+    if jogadas % 2 == 0: #
+        velha[jogada-1] = 'X'
+    else:
+        velha[jogada-1] = 'O'
+    if velha[0] == velha [1] == velha[2]:
+        vitorias = 1
+    elif velha[3] == velha[4] == velha[5]:
+        vitorias = 1
+    elif velha[6] == velha[7] == velha[8]:
+        vitorias = 1
+    elif velha[0] == velha[3] == velha[6]:
+        vitorias = 1
+    elif velha[1] == velha[4] == velha[7]:
+        vitorias = 1
+    elif velha[2] == velha[5] == velha[8]:
+        vitorias = 1
+    elif velha[0] == velha[4] == velha[8]:
+        vitorias = 1
+    elif velha[2] == velha[4] == velha[6]:
+        vitorias = 1
+#Imprimindo tabuleiro
+#Imprimindo tabuleiro
+    print()
+    print(velha[0], velha[1], velha[2])
+    print(velha[3], velha[4], velha[5])
+    print(velha[6], velha[7], velha[8])
+    jogadas = jogadas - 1
+if vitorias == 1: # Se vitorias for igual a 1 o jogo acaba
+    print("você venceu o jogo")
+else: # senão o jogo velha
+    print("O jogou velhou")
+
+#Imprimindo tabuleiro final
+print()
+print(velha[0], velha[1], velha[2])
+print(velha[3], velha[4], velha[5])
+print(velha[6], velha[7], velha[8])
